@@ -376,7 +376,7 @@ article.hidden {
 @media only screen and (min-width : 60em) {
     .results {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 20% 40% 40%;
     }
     .filter-menu {
         grid-area: 1;
@@ -390,7 +390,7 @@ article.hidden {
     }
 
     .element-item {
-        width: 30%;
+        width: 48%;
         padding: 1%;
     }
 
@@ -399,11 +399,6 @@ article.hidden {
         flex-flow: column;
         flex-wrap: wrap;
         column-width: 20em;
-    }
-
-    .splitscreen .element-item {
-        width: 50%;
-        padding: 2%;
     }
 }
 
