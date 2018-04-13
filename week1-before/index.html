@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Awesome video's</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style/revenge.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#main">Skip to main content</a></li>
+            <li><a href="#home">Home</a></li>
+            <li>
+                <a href="/library">Library</a>
+                <ul>
+                    <li><a href="/library/playlists">Playlists</a></li>
+                    <li><a href="/library/songs">Songs</a></li>
+                    <li><a href="/library/artists">Artists</a></li>
+                </ul>
+            </li>
+            <li><a href="explore">Explore</a></li>
+            <li><a href="#login">Profile</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <section class="feedback">
+            <span class="feedback-result">1001 resultaten</span>
+        </section>
+        <section class="actions">
+            <div class="filter">
+                <button class="filter-button">
+                    <div class="filter-icon"></div>
+                    <span>Filter resultaten</span>
+                </button>
+            </div>
+            <div class="sort">
+                <button name="sort" class="sort-button">
+                    <span class="sort-span">Sorteer op</span>
+                </button>
+                <ul class="sort-dropdown hidden">
+                    <li><a href="relevance" value="relevance" selected="relevance">Relevantie</a></li>
+                    <li><a href="relevance" value="date">Uploaddatum</a></li>
+                    <li><a href="relevance" value="popularity">Aantal weergaven</a></li>
+                    <li><a href="relevance" value="rating">Beoordeling</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="results">
+            <aside class="filter-menu hidden">
+                <div class="button-group filters-button-group"></fom>
+                        <button class="button" data-filter="*">Verwijder filters</button>
+                    <h3>Type</h3>
+                        <button class="button" data-filter=".film">Film</button>
+                        <button class="button" data-filter=".serie">Serie</button>
+                        <button class="button" data-filter=".video">Video</button>
+                    <h3>Categorie</h3>
+                        <button class="button" data-filter=".animation">Animatie</button>
+                        <button class="button" data-filter=".comedy">Comedy</button>
+                        <button class="button" data-filter=".documentary">Documentaire</button>
+                        <button class="button" data-filter=".drama">Drama</button>
+                        <button class="button" data-filter=".crime">Misdaad</button>
+                        <button class="button" data-filter=".music">Muziek</button>
+                        <button class="button" data-filter=".scifi">Sci-fi / Fantasy</button>
+                    <h3>Lengte</h3>
+                        <button class="button" data-filter=".short">< 10 min></button>
+                        <button class="button" data-filter=".medium">10 - 90 min</button>
+                        <button class="button" data-filter=".long">> 1,5 uur</button>
+                    <h3>Provider</h3>
+                        <button class="button" data-filter=".netflix">Netflix</button>
+                        <button class="button" data-filter=".youtube">Youtube</button>
+                        <button class="button" data-filter=".hbo">HBO</button>
+                </div>
+            </aside>
+            <article class="content">
+                <div class="element-item serie scifi long netflix">
+                
+                    <span class="length">1 seizoen</span>
+                    <img src="http://assets1.ignimgs.com/2017/11/28/dark-1280-01-1511891269410_1280w.jpg">
+                    <h4>Dark</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="provider"><img src="images/Netflix_logo.svg" alt="netflix"></div>
+                
+                </div>
+                <div class="element-item serie scifi long hbo">
+                
+                    <span class="length">1 seizoen</span>
+                    <img src="https://imagesvc.timeincapp.com/v3/fan/image?url=https://winteriscoming.net/files/2017/06/Westworld.jpg&">
+                    <h4>Westworld</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="provider"><img src="images/HBO_logo.svg" alt="HBO"></div>
+                
+                </div>
+                <div class="element-item film animation long netflix">
+                
+                    <span class="length">1 uur 54</span>
+                    <img src="https://occ-0-999-1009.1.nflxso.net/art/c690b/1ae3c9682adff6fe515582b8dbe2d3f5331c690b.jpg">
+                    <h4>Big Hero 6</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="provider"><img src="images/Netflix_logo.svg" alt="netflix"></div>
+                
+                </div>
+                <div class="element-item video music short youtube">
+                
+                    <span class="length">3:15 minuten</span>
+                    <img src="https://i.ytimg.com/vi/TjPhzgxe3L0/maxresdefault.jpg">
+                    <h4>The Smiths - Heaven Knows I'm Miserable Now (official video)</h4>
+                    <div class="provider"><img src="images/yt_logo_rgb_light.png" alt="youtube"></div>
+                
+                </div>
+                <div class="element-item film music short youtube">
+                
+                    <span class="length">2:10 minuten</span>
+                    <img src="https://i.ytimg.com/vi/vDUQEFuyFmU/maxresdefault.jpg">
+                    <h4>J.J. Cale - Call Me The Breeze (1979)</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="provider"><img src="images/yt_logo_rgb_light.png" alt="youtube"></div>
+                
+                </div>
+                <div class="element-item film documentary long netflix">
+                
+                    <span class="length">2 uur 10</span>
+                    <img src="https://www.filmtotaal.nl/images/original/qc744nvq7kgf_hero.jpg">
+                    <h4>13TH</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="provider"><img src="images/Netflix_logo.svg" alt="netflix"></div>
+                
+                </div>
+                <div class="element-item serie drama long hbo">
+                
+                    <span class="length">6 seizoenen</span>
+                    <img src="http://www.much.com/wp-content/uploads/2016/01/girls-season-5.jpg">
+                    <h4>Girls</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="provider"><img src="images/HBO_logo.svg" alt="hbo"></div>
+                
+                </div>
+                <div class="element-item film animation long netflix">
+                
+                    <span class="length">1 uur 45</span>
+                    <img src="https://occ-0-2433-1001.1.nflxso.net/art/e0e0d/3625b40660385fdc5d55295796ba43fc678e0e0d.jpg">
+                    <h4>Spongebob The Movie</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="provider"><img src="images/Netflix_logo.svg" alt="netflix"></div>
+                
+                </div>
+                <div class="element-item video music medium youtube">
+                
+                    <span class="length">76 minuten</span>
+                    <img src="http://culto.latercera.com/wp-content/uploads/2018/03/2017-06-20-Gorillaz-Cologne-Peyman-Azhari-8_b-1240x710.jpg">
+                    <h4>Gorillaz Full Concert Humanz Tour (2017)</h4>
+                    <div class="provider"><img src="images/yt_logo_rgb_light.png" alt="youtube"></div>
+                
+                </div>
+                 <div class="element-item video music short youtube">
+                
+                    <span class="length">4:30 minuten</span>
+                    <img src="https://i.ytimg.com/vi/jJqOfL9tBVo/maxresdefault.jpg">
+                    <h4>Breaking Bad Remix (Seasons 3-5)</h4>
+                    <div class="provider"><img src="images/yt_logo_rgb_light.png" alt="youtube"></div>
+                
+                </div>
+                <div class="element-item serie comedy long netflix">
+                
+                    <span class="length">9 seizoenen</span>
+                    <img src="https://occ-0-2433-448.1.nflxso.net/art/d625a/3a768af837beec72f65bb34b8933b7ba2d2d625a.jpg">
+                    <h4>Rupaul's Drag Race</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="provider"><img src="images/Netflix_logo.svg" alt="netflix"></div>
+                
+                </div>
+                <div class="element-item serie drama long netflix">
+                
+                    <span class="length">6 seizoenen</span>
+                    <img src="https://s-media-cache-ak0.pinimg.com/originals/f1/6c/fe/f16cfe13e20a8f69e773545c54183fbd.jpg">
+                    <h4>Mad Men</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="provider"><img src="images/Netflix_logo.svg" alt="netflix"></div>
+                
+                </div>
+                <div class="element-item film crime long netflix">
+                
+                    <span class="length">1 uur 45</span>
+                    <img src="https://addyronnie.files.wordpress.com/2014/12/test-blu-ray-no-country-for-old-men-5.jpg">
+                    <h4>No Country For Old Men</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="provider"><img src="images/Netflix_logo.svg" alt="netflix"></div>
+                
+                </div>
+                <div class="element-item film crime long hbo">
+                
+                    <span class="length">3 seizoenen</span>
+                    <img src="http://cdn1us.denofgeek.com/sites/denofgeekus/files/true_detective_the_locked_room_1.jpg">
+                    <h4>True Detective</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="provider"><img src="images/HBO_logo.svg" alt="hbo"></div>
+                
+                </div>
+                <div class="element-item film crime drama long hbo">
+                
+                    <span class="length">3 seizoenen</span>
+                    <img src="http://sm.ign.com/ign_nl/video/t/twin-peaks/twin-peaks-in-5-minutes_kfsa.jpg">
+                    <h4>Twin Peaks</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <div class="provider"><img src="images/HBO_logo.svg" alt="hbo"></div>
+                
+                </div>
+            </article>
+        </section>
+    <a href="#body">Back to top</a>    
+    </main>
+    <script src="js/isotope.pkgd.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

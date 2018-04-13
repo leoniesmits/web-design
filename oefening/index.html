@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Awesome video's</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style/revenge.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#main">Skip to main content</a></li>
+            <li><a href="#home">Home</a></li>
+            <li>
+                <a href="/library">Library</a>
+                <ul>
+                    <li><a href="/library/playlists">Playlists</a></li>
+                    <li><a href="/library/songs">Songs</a></li>
+                    <li><a href="/library/artists">Artists</a></li>
+                </ul>
+            </li>
+            <li><a href="explore">Explore</a></li>
+            <li><a href="#login">Profile</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <section class="feedback">
+            <span class="feedback-result">1001 resultaten</span>
+        </section>
+        <section class="actions">
+            <div class="filter">
+                <button class="filter-button">
+                    <div class="filter-icon"></div>
+                    <span>Filter resultaten</span>
+                </button>
+            </div>
+            <div class="sort">
+                <span>Sorteer op</span>
+                <select name="sort" class="sort-select">
+                    <option value="relevance" selected="relevance">Relevantie</option>
+                    <option value="date">Uploaddatum</option>
+                    <option value="popularity">Aantal weergaven</option>
+                    <option value="rating">Beoordeling</option>
+                </select>
+            </div>
+        </section>
+        <section class="results">
+            <aside class="filter-menu hidden">
+                <!-- <div>
+                    <button class="button" data-filter="*">Verwijder filters</button>
+                    <h3>Type</h3>
+                    <fom class="button-group filters-button-group">
+                        <button class="button" data-filter=".film">Film</button>
+                        <button class="button" data-filter=".serie">Serie</button>
+                        <button class="button" data-filter=".video">Video</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Categorie</h3>
+                    <div class="button-group filters-button-group">
+                        <button class="button is-checked" data-filter="*">show all</button>
+                        <button class="button" data-filter=".metal">metal</button>
+                        <button class="button" data-filter=".transition">transition</button>
+                        <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
+                        <button class="button" data-filter=":not(.transition)">not transition</button>
+                        <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
+                        <button class="button" data-filter="numberGreaterThan50">number > 50</button>
+                        <button class="button" data-filter="ium">name ends with &ndash;ium</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>Lengte</h3>
+                    <fom class="button-group filters-button-group">
+                        <button class="button" data-filter=".short">< 10 min></button>
+                        <button class="button" data-filter=".medium">10 - 60 min</button>
+                        <button class="button" data-filter=".long">> 1 uur</button>
+                    </form>
+                </div>
+                 <div>
+                    <h3>Provider</h3>
+                    <form class="button-group filters-button-group">
+                        <button class="button" data-filter=".netflix">Netflix</button>
+                        <button class="button" data-filter=".youtube">Youtube</button>
+                        <button class="button" data-filter=".hbo">HBO</button>
+                    </form>
+                </div> -->
+                <div class="button-group filters-button-group">
+                        <button class="button is-checked" data-filter="*">show all</button>
+                        <button class="button" data-filter=".metal">metal</button>
+                        <button class="button" data-filter=".transition">transition</button>
+                        <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
+                        <button class="button" data-filter=":not(.transition)">not transition</button>
+                        <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
+                        <button class="button" data-filter="numberGreaterThan50">number > 50</button>
+                        <button class="button" data-filter="ium">name ends with &ndash;ium</button>
+                      </div>
+            </aside>
+            <div class="grid">
+                <div class="element-item transition metal " data-category="transition">
+                    <h3 class="name">Mercury</h3>
+                    <p class="symbol">Hg</p>
+                    <p class="number">80</p>
+                    <p class="weight">200.59</p>
+                </div>
+                <div class="element-item metalloid " data-category="metalloid">
+                    <h3 class="name">Tellurium</h3>
+                    <p class="symbol">Te</p>
+                    <p class="number">52</p>
+                    <p class="weight">127.6</p>
+                </div>
+                <div class="element-item post-transition metal " data-category="post-transition">
+                    <h3 class="name">Bismuth</h3>
+                    <p class="symbol">Bi</p>
+                    <p class="number">83</p>
+                    <p class="weight">208.980</p>
+                </div>
+                <div class="element-item post-transition metal " data-category="post-transition">
+                    <h3 class="name">Lead</h3>
+                    <p class="symbol">Pb</p>
+                    <p class="number">82</p>
+                    <p class="weight">207.2</p>
+                </div>
+                <div class="element-item transition metal " data-category="transition">
+                    <h3 class="name">Gold</h3>
+                    <p class="symbol">Au</p>
+                    <p class="number">79</p>
+                    <p class="weight">196.967</p>
+                </div>
+            </div>
+            <!-- <article class="grid">
+                <div class="element-item serie long">
+                
+                    <span class="length">1 seizoen</span>
+                    <img src="http://assets1.ignimgs.com/2017/11/28/dark-1280-01-1511891269410_1280w.jpg" alt="thumbnail-dark">
+                    <h4>Dark</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <span class="type">Serie</span>
+                    <span class="category">Sci-fi</span>
+                    <div class="provider"><img src="images/Netflix_logo.svg" alt="netflix"></div>
+                
+                </div>
+                <div class="element-item serie long">
+                    
+                        <span class="length">1 seizoen</span>
+                        <img src="https://imagesvc.timeincapp.com/v3/fan/image?url=https://winteriscoming.net/files/2017/06/Westworld.jpg&" alt="thumbnail-westworld">
+                        <h4>Westworld</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <span class="type">Serie</span>
+                        <span class="category scifi">Sci-fi</span>
+                        <div class="provider"><img src="images/HBO_logo.svg" alt="HBO"></div>
+                    
+                </div>
+                <div class="element-item film long">
+                    
+                        <span class="length">1 uur 54</span>
+                        <img src="https://occ-0-999-1009.1.nflxso.net/art/c690b/1ae3c9682adff6fe515582b8dbe2d3f5331c690b.jpg" alt="thumbnail-big hero 6">
+                        <h4>Big Hero 6</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <span class="type">Serie</span>
+                        <span class="category">Animatie</span>
+                        <div class="provider"><img src="images/Netflix_logo.svg" alt="netflix"></div>
+                    
+                </div>
+                <div class="element-item video short">
+                    
+                        <span class="length">3:15 minuten</span>
+                        <img src="https://i.ytimg.com/vi/TjPhzgxe3L0/maxresdefault.jpg" alt="thumbnail-heaven knows i'm miserable now">
+                        <h4>The Smiths - Heaven Knows I'm Miserable Now (official video)</h4>
+                        <span class="type">Video</span>
+                        <span class="category">Muziek</span>
+                        <div class="provider"><img src="images/yt_logo_rgb_light.png">youtube</div>
+                    
+                </div>
+            </article> -->
+        </section>
+    <a href="#body">Back to top</a>    
+    </main>
+    <script src="js/isotope.pkgd.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

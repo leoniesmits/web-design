@@ -1,0 +1,301 @@
+/* ==========
+G L O B A L
+============*/
+
+:root {
+    --body-font: "Roboto", sans-serif;
+    --primary-color: #CC0644;
+    --secondary-color: #72D0FF;
+    --teritary-color: #FFDA35;
+    --bg: #EFF4FF;
+    --light: #ffffff;
+    --dark: #00000;
+    --light-grey: #FCFCFC;
+    --medium-grey: #C6C6C6;
+    --dark-grey: #5E5E5E;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light);
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: var(--body-font);
+}
+
+/* ================
+N A V I G A T I O N 
+=================*/
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+nav ul li:nth-child(1) {
+    margin-right: auto;
+}
+
+nav a[href="#main"],
+nav a[href="#body"] {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index:-10;
+}
+
+nav a[href="#main"]:focus,
+nav a[href="#main"]:active,
+nav a[href="#body"]:focus,
+nav a[href="#body"]:active {
+    width: auto;
+    height: auto;
+    overflow: visible;
+    z-index: 10;
+}
+
+body > nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+nav ul { 
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--light);
+    flex-flow: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul ul {
+    flex-flow: column;
+    position: absolute;
+}
+
+nav ul li {
+    padding: 0.5em;
+}
+
+body > nav ul li a:focus {
+    outline: none;
+}
+
+body > nav li a {
+    padding: 0.5em;
+    display: inline-block;
+    color: var(--dark-grey);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+body > nav li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width .3s;
+}
+
+body > nav li a:focus::after,
+body > nav li a:hover::after {
+    width: 100%;
+}
+
+
+body > nav li a:focus,
+body > nav li a:hover {
+    color: var(--primary-color);
+}
+
+
+body > nav ul li li {
+    padding: 0;
+    margin-top: 0.5em;
+}
+
+body > nav ul li ul li a {
+    display: none;
+    visibility: hidden;
+ }
+
+ body > nav ul li:focus-within ul li a,
+ body > nav ul li:hover ul li a {
+    display: inline-block;
+    visibility: visible;
+    position: relative;
+ }
+
+
+ /* ==========
+A C T I O N S 
+============*/
+
+.filter-button.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.filter-button.active .filter-icon:after {
+    content: \2192;
+}
+
+.filter-menu {
+    width: 100%;
+    position: relative;
+}
+.filter-menu.hidden {
+    width: 0px;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+
+/* =================
+T H U M B N A I L S 
+==================*/
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-bottom: 10px;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #28F;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+.button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+.button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+/* ---- isotope ---- */
+
+.grid {
+  border: 1px solid #333;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  background: #888;
+  color: #262524;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
