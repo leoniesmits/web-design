@@ -470,7 +470,7 @@ figure figcaption {
 
 @media only screen and (min-width : 52em) {
 
-    /* .principles {
+    /* .article {
         display: grid;
         grid-template-rows: auto 1fr;
         grid-template-columns: 1fr 1fr;
@@ -478,12 +478,12 @@ figure figcaption {
     } */
 
 
-    .principles {
+    .article {
         width: 100%;
         display: flex;
     }
 
-    .principles:after{
+    .article:after{
         -webkit-box-flex: 0;
         -webkit-flex-grow: 0;
         -ms-flex-positive: 0;
@@ -498,20 +498,20 @@ figure figcaption {
         background-color: var(--light-grey);
     }
 
-    .principles div:focus-within,
-    .principles div:focus {
+    .article div:focus-within,
+    .article div:focus {
         background-color: papayawhip;
     }
 
-    .principles div:nth-of-type(even) {
+    .article div:nth-of-type(even) {
         background-color: lightgrey;
     }
 
-    .principles h1 {
+    .article h1 {
         font-family: var(--header-font);
     }
 
-    .principles p {
+    .article p {
         font-family: var(--body-font);
         font-size: 1em;
         line-height: 1.8em;
@@ -539,7 +539,7 @@ figure figcaption {
 }
 
 @media only screen and (min-width : 80em) {
-    .principles {
+    .article {
         max-width: 1101px;
         display: flex;
         -webkit-box-pack: end;
