@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="nl">
 <head>
 	<meta charset="utf-8">
 	<title>Web Design</title>
@@ -9,26 +10,26 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
     <nav class="menu-nav">
         <button aria-label="Home" class="home-button" role="home"><a href="/web-design">W</a></button>
         <button class="menu-button">Menu</button>
-        <ul class="menu-ul">
+       <ul class="menu-ul">
             <li><a href="#main">Skip to main content</a></li>
             <li><a href="principles.html">Design principles</a></li>
-            <li>
+            <!-- <li>
                 <a href="usability">Usability</a>
                 <ul>
-                    <li><a href="/library/playlists">Searching</a></li>
-                    <li><a href="/library/songs">Architecture</a></li>
-                    <li><a href="/library/songs">Feedback</a></li>
+                    <li><a href="usability.html#zoeken">Zoeken</a></li>
+                    <li><a href="usability.html#architectuur">Architectuur</a></li>
+                    <li><a href="usability.html#feedback">Feedback</a></li>
                 </ul>
-            </li>
-            <li><a href="exclusive">Toegankelijkheid</a>
-                <ul>
-                    <li><a href="/library/playlists">Disibilities</a></li>
-                    <li><a href="/library/songs">Inclusive & Exclusive</a></li>
-                </ul>
+            </li> -->
+            <li><a href="toegankelijkheid.html">Toegankelijkheid</a>
+                <!-- <ul>
+                    <li><a href="toegankelijkheid.html#larissa">Larissa</a></li>
+                    <li><a href="toegankelijkheid.html#inclusive">Inclusief & Exclusief</a></li>
+                </ul> -->
             </li>
         </ul>
     </nav>
@@ -37,15 +38,13 @@
             <div class="bar"></div>
         </div>
         <header class="article-header">
-            
-            <h1 class="subheader-text">In dit artikel behandelen we de 19 "Principles of User Interface Design, geschreven door Joshua Porter. Porter is een product- en interface designer en schrijver. 
-                <a class="source-article" href="http://bokardo.com/principles-of-user-interface-design/">Zijn site is bokardo.com,</a> hier vind je dit artikel terug.
-            </h1>
-            <div class="header-title">
-                <h1 class="header-text">11 Design principles</h1>
-            </div>
+            <p class="subheader-text">
+            In dit artikel behandelen we de 19 "Principles of User Interface Design, geschreven door Joshua Porter. Porter is een product- en interface designer en schrijver. 
+            <a class="source-article" href="http://bokardo.com/principles-of-user-interface-design/">Zijn site is bokardo.com,</a> hier vind je dit artikel terug.
+            </p>
+                <h1 class="header-title header-text">11 Design principles</h1>
         </header>
-        <article lang="en" class="principles">
+        <article title="english" lang="en" class="article">
             <ol class="inner-article">
             <li>
                 <h1>Clarity is job #1</h1>
@@ -54,7 +53,7 @@
                     predict what will happen when they use it, and then successfully interact with it. 
                     While there is room for mystery and delayed gratification in interfaces, 
                     <span class="content-item toggle-item">
-                        <button class="content-button toggle-icon">
+                        <button aria-label="Read more about clarity" class="content-button toggle-icon">
                             <span class="content-item content-snippet">
                                 there is no room for confusion.
                             </span>
@@ -148,8 +147,10 @@
             </li>        
         </ol>
         </article>
+        <button class="start"><a href="toegankelijkheid.html">Lees verder over toegankelijkheid <span class="arrow">></span></a></button>
 
     <a href="#body">Back to top</a>    
     </main>
     <script src="js/index.js"></script>
 </body>
+</html>

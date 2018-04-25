@@ -9,35 +9,33 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 </head>
 
-<body>
+<body id="body" class="home">
     <nav class="menu-nav">
-        <button class="home-button first-page" role="home"><a href="/">W</a></button>
+        <button aria-label="Home" class="home-button first-page" role="home"><a href="/web-design">W</a></button>
         <button class="menu-button">Menu</button>
         <ul class="menu-ul">
             <li><a href="#main">Skip to main content</a></li>
             <li><a href="principles.html">Design principles</a></li>
-            <li>
+            <!-- <li>
                 <a href="usability">Usability</a>
                 <ul>
-                    <li><a href="/library/playlists">Searching</a></li>
-                    <li><a href="/library/songs">Architecture</a></li>
-                    <li><a href="/library/songs">Feedback</a></li>
+                    <li><a href="usability.html#zoeken">Zoeken</a></li>
+                    <li><a href="usability.html#architectuur">Architectuur</a></li>
+                    <li><a href="usability.html#feedback">Feedback</a></li>
                 </ul>
-            </li>
-            <li><a href="exclusive">Toegankelijkheid</a>
-                <ul>
-                    <li><a href="/library/playlists">Disibilities</a></li>
-                    <li><a href="/library/songs">Inclusive & Exclusive</a></li>
-                </ul>
+            </li> -->
+            <li><a href="toegankelijkheid.html">Toegankelijkheid</a>
+                <!-- <ul>
+                    <li><a href="toegankelijkheid.html#larissa">Larissa</a></li>
+                    <li><a href="toegankelijkheid.html#inclusive">Inclusief & Exclusief</a></li>
+                </ul> -->
             </li>
         </ul>
     </nav>
     <main id="main">
-        <header>
+        <header class="home-header">
             <h1 class="logo">Web Design</h1>
             <h2 class="logo-text">gaat over het vormgeven van Interactie. Met deze snelcursus wordt je hierin een expert.</h2>
-        </header>
-        <div class="main-wrapper">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 131.91">
             <title>Naamloos-6</title>
             <g id="rand">
@@ -70,9 +68,36 @@
                 kan toepassen én verstand heeft van UX en design. Als je Web techniek begrijpt kun je je ideeën snel prototypen en testen met echte gebruikers, 
                 in een browser, en dan aanpassingen doorvoeren, uitproberen en weer testen.</p>
         </article>
-        <button class="start">Begin bij het begin <span class="arrow">></span></button>
-
-        </div>>
+        <button class="start"><a href="principles.html">Begin bij het begin <span class="arrow">></span></a></button>
+        </header>
+        
+        <!-- <a href="usability.html"> -->
+            <section class="home-section">
+            <p>Voor het ontwerpen van goede interactie is het belangrijk dat je op de hoogte bent van wat je gebruiker wil en kan doen.
+                Met User Goals en User Stories kun je beschrijven wat een gebruiker met een website wil bereiken en in welke context. Met een juiste structuur en het ontwerpen van een goede flow (volgorde) van de stappen die iemand moet doorlopen zorg je ervoor dat een gebruiker makkelijk zijn of haar doel kan bereiken. Hoe doe je dat (ook alweer)?
+                In dit artikel gaan we het hebben over:</p>
+                <ul>
+                    <li>Zoeken</li>
+                    <li>Architectuur</li>
+                    <li>Feedback</li>
+                    <!-- <li><a href="usability.html#zoeken">Zoeken</a></li>
+                    <li><a href="usability.html#architectuur">Architectuur</a></li>
+                    <li><a href="usability.html#feedback">Feedback</a></li> -->
+                </ul> 
+            </section>
+        <!-- </a> -->
+        
+        <section class="home-section">
+            <a href="toegankelijkheid.html">
+                <div>
+                <h1>Onderzoek naar toegankelijkheid met Larissa</h1>
+                <p>Op het web zijn er maar weinig sites die rekening houden met slechtziende gebruikers. Ook gebruikers met een 
+                    motorische beperking worden vaak niet ondersteund. Zelfs professionele sites met veel bezoekers zijn niet toegankelijk voor een groot deel van de gebruikers op het internet.
+                </p>
+            </div>
+            </a>
+        </section>
+       
     <a href="#body">Back to top</a>    
     </main>
     <script src="js/index.js"></script>
