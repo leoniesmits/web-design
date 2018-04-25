@@ -7,6 +7,7 @@ G L O B A L
     --header-font: "Avenir";
     --logo-font: "3Dventure";
     --primary-color: #CC0644;
+    --primary-bg: rgb(255, 242, 184);;
     --secondary-color: #72D0FF;
     --teritary-color: #FFDA35;
     --bg: #EFF4FF;
@@ -32,6 +33,16 @@ body {
 main {
     margin: 0;
     background-color: var(--light-grey);
+    display: flex;
+    flex-flow: column;
+}
+
+body.home {
+    background-color: var(--primary-bg);
+}
+
+.home main {
+    background-color: transparent;
 }
 
 @font-face {
@@ -52,12 +63,15 @@ button {
     background-color: #fff;
 }
 
+.home .menu-nav {
+    background-color: transparent;
+}
+
 .menu-nav {
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
     flex-wrap: wrap;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055), 0 1px 2px rgba(0, 0, 0, 0.144);
     background-color: #fff;
 }
 
@@ -77,6 +91,11 @@ button {
     font-size: 2em;
     margin: 12px 0 0 12px;
     margin-right: auto;
+}
+
+.menu-nav.scrolled {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055), 0 1px 2px rgba(0, 0, 0, 0.144);
+    background-color: #fff;
 }
 
 .menu-nav.scrolled .home-button {
@@ -133,10 +152,13 @@ body > nav {
     z-index: 10;
 }
 
+.scrolled ul {
+    background-color: #fff;
+}
+
 nav ul { 
     display: flex;
     justify-content: flex-end;
-    background-color: var(--light);
     flex-flow: column;
     list-style: none;
     margin: 0;
@@ -148,6 +170,10 @@ nav ul {
     .menu-nav .home-button a:after {
         content: "eb design";
     }
+
+    /* .menu-nav {
+        background-color: #fff;
+    } */
 
     .menu-button {
         display: none;
@@ -192,8 +218,13 @@ nav ul {
         position: absolute;
     }
 
+    .home nav ul li {
+        background-color: transparent;
+    }
+
     nav ul li {
         padding: 0.5em;
+        background-color: #fff
     }
 
     body > nav ul li a:focus {
@@ -264,20 +295,42 @@ p.logo-text {
 article.introtext {
     font-family: var(--body-font);
     font-size: 0.8em;
-} 
-
-div.main-wrapper {
-    display: flex;
-    flex-flow: column;
 }
 
-svg {
+header svg {
     width: 80%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
+    margin: 0 auto;
+}
+
+.home-header {
+    display: flex;
+    flex-flow: column;
+    padding: 0 1em;
+    height: 100vh;
+}
+
+.home-section {
+    background-color: #fff;
+}
+
+.home-section a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width : 52em) {
+
+    header svg {
+        width: 40%;
+    }
+}
+@media only screen and (min-width : 80em) {
+    header svg {
+        width: 30%;
+    }
 }
  /* 
 svg path {
@@ -339,7 +392,7 @@ A R T I C L E S
 }
 
 .article-header {
-    background-color: wheat;
+    background-color: var(--primary-bg);
     display: flex;
     flex-flow: column;
     align-items: flex-start;
@@ -481,6 +534,7 @@ figure figcaption {
     .article {
         width: 100%;
         display: flex;
+        flex-flow: column;
     }
 
     .article:after{
