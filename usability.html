@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="nl">
 <head>
 	<meta charset="utf-8">
 	<title>Web Design</title>
@@ -9,25 +10,30 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
     <nav class="menu-nav">
-        <button class="home-button" role="home"><a href="/">W</a></button>
+        <button aria-label="Home" class="home-button" role="home"><a href="/web-design">W</a></button>
         <button class="menu-button">Menu</button>
         <ul class="menu-ul">
             <li><a href="#main">Skip to main content</a></li>
             <li><a href="principles.html">Design principles</a></li>
-            <li>
-                <a href="usability">Usability</a>
+             <li>
+                <a class="active" href="usability">Usability</a>
                 <ul>
-                    <li><a href="">Usability & information</a></li>
-                    <li><a href="/library/songs">Songs</a></li>
-                    <li><a href="/library/artists">Artists</a></li>
+                    <li><a href="usability.html#zoeken">Zoeken</a></li>
+                    <li><a href="usability.html#architectuur">Architectuur</a></li>
+                    <li><a href="usability.html#feedback">Feedback</a></li>
                 </ul>
             </li>
-            <li><a href="exclusive">Exclusive Design</a></li>
+            <li><a href="toegankelijkheid.html">Toegankelijkheid</a>
+                <ul>
+                    <li><a href="toegankelijkheid.html#larissa">Larissa</a></li>
+                    <li><a href="toegankelijkheid.html#inclusive">Inclusief & Exclusief</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
-    <main>
+    <main id="main">
         <div  class="progress">
             <div class="bar"></div>
         </div>
@@ -41,9 +47,17 @@
                 <h1 class="header-text">Usability</h1>
             </div>
         </header>
-        <article lang="en" class="principles">
+        <article lang="en" class="article">
+           <figure>
+                    <image src="images/in-control.jpg" class="content-image" alt="Example of CoolBlue's filtering options."></image>
+                    <figcaption>Screenshot of the CoolBlue website. The user has a lot of choice in filtering and sorting the data, but doesn't get overwhelmed. 
+                        This is a great example of researching the users' goals.
+                    </figcaption>
+                </figure>
+            <span class="function">Function</span>
         </article>
         <a href="#body">Back to top</a>    
     </main>
     <script src="js/index.js"></script>
 </body>
+</html>
